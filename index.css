@@ -1,0 +1,222 @@
+:root {
+    --blurRadius-1: 12rem;
+    --blurRadius-2: 14rem;
+}
+
+
+html {
+    font-family: "Wix Madefor Text", sans-serif;
+    font-size: 10px;
+    background: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+h1 {
+    font-size: 2.4rem;
+    line-height: 136%;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+.page-content {
+    display: flex;
+    /* width: 36rem;
+    height: 40rem; */
+    padding: 0.125rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.125rem;
+    flex-shrink: 0;
+    /* margin-bottom: 10vh; */
+}
+
+.header {
+    border-radius: 1.25rem;
+    background: transparent;
+    display: flex;
+    padding: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.header .logo {
+    opacity: 0.32;
+    transition: opacity 0.2s ease-out;
+}
+
+.header .logo:hover {
+    opacity: 0.56;
+}
+
+.header a {
+    font-size: 1.6rem;
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.32;
+    transition: opacity 0.2s ease-out;
+}
+
+.header a:hover {
+    opacity: 0.56;
+}
+
+.mantraBox {
+    display: flex;
+    width: 36rem;
+    height: 36rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex: auto;
+    overflow: clip;
+    box-sizing: border-box;
+    border-radius: 1.5rem;
+    background: linear-gradient(
+        180deg,
+        rgba(69, 69, 69, 0.22) 0%,
+        rgba(0, 0, 0, 0.22) 100%
+    );
+    outline: 1px solid rgba(255, 255, 255, 0.2);
+    outline-offset: -1px;
+    transition: opacity 0.3s ease-out;
+    opacity: 1;
+}
+
+.mantraBox .content {
+    filter: saturate(2.5);
+    mix-blend-mode: hard-light;
+    background-color: #ff000040;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2.5rem;
+    z-index: 99;
+}
+
+.mantraBox .details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    mix-blend-mode: overlay;
+    transition: opacity 0.3s ease-out;
+}
+
+h1.piece {
+    margin-top: -0.6rem;
+    mix-blend-mode: overlay;
+    transition: opacity 0.3s ease-out;
+}
+
+h4.origin {
+    opacity: 0.56;
+}
+
+.colorful-bg {
+    display: block;
+    position: relative;
+    height: 0;
+}
+
+.color-1 {
+    display: block;
+    position: absolute;
+    transform: translate(23%, -50%);
+    width: 25rem;
+    height: 25rem;
+    background: #0e12ea;
+    filter: blur(var(--blurRadius-1));
+}
+
+.color-2 {
+    display: block;
+    position: absolute;
+    transform: translate(92%, -190%);
+    width: 25rem;
+    height: 25rem;
+    background: #fffc00;
+    filter: blur(var(--blurRadius-1));
+}
+
+.color-3 {
+    display: block;
+    position: absolute;
+    transform: translate(-45%, -144%);
+    width: 25rem;
+    height: 25rem;
+    background: #ff00fc;
+    filter: blur(var(--blurRadius-1));
+}
+
+.footer {
+    display: flex;
+    padding: 20px;
+    gap: 16px;
+}
+
+a.auxBtn {
+    width: 48px;
+    height: 48px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff12;
+    text-decoration: none;
+    color: #ffffff40;
+    border-radius: 50%;
+    border: 1px solid #ffffff08;
+    box-sizing: border-box;
+}
+
+a.auxBtn:hover {
+    color: #ffffff96;
+    background-color: #ffffff20;
+    transition: all .3s ease-in;
+    border: 1px solid #ffffff16;
+
+}
+
+
+/* Responsive */
+
+@media (max-width: 480px) {
+    .page-content {
+        height: 100vh;
+        padding: 8px;
+        justify-content: center;
+    }
+    .mantraBox {
+        width: 100%;
+        min-height: 40%;
+        max-height: 60%;
+    }
+    .color-1,
+    .color-2,
+    .color-3 {
+        width: 40rem;
+        height: 40rem;
+        filter: blur(var(--blurRadius-2));
+    }
+    .color-2 {
+        transform: translate(60%, -190%);
+    }
+}
