@@ -10,9 +10,15 @@ import contentLibrary from "./mantras.js";
 // author.innerText = contentLibrary[N].author;
 // origin.innerText = contentLibrary[N].origin;
 
-const getRandomMantra = () => contentLibrary[Math.floor(Math.random() * contentLibrary.length)];
+function getRandomMantra() {
+    const mantra = contentLibrary[Math.floor(Math.random() * contentLibrary.length)];
+    console.log('Selected mantra:', mantra);
+    let indexM = contentLibrary.indexOf(mantra)
+    console.log(indexM);
+    return mantra;
+}
 
-const displayMantra = ({piece, author, origin}) => {
+function displayMantra({piece, author, origin}) {
     // console.log({piece, author, origin});
     document.querySelector('.piece').textContent = piece;
     document.querySelector('.author').textContent = author;
