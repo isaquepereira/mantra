@@ -110,6 +110,23 @@ h4 {
     justify-content: space-between;
     padding: 2.5rem;
     z-index: 99;
+    overflow: scroll;
+}
+
+.content > p {
+    font-size: 1.6rem;
+    line-height: 144%;
+    margin-top: 1rem;
+    mix-blend-mode: overlay;
+}
+
+.content > p > a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.content > p > a:hover {
+    text-decoration: underline;
 }
 
 .mantraBox .details {
@@ -118,18 +135,17 @@ h4 {
     align-items: flex-start;
     gap: 0.6rem;
     mix-blend-mode: overlay;
-    transition: opacity 0.3s ease-out;
 }
 
 h1.piece {
     margin-top: -0.6rem;
     mix-blend-mode: overlay;
-    transition: opacity 0.3s ease-out;
 }
 
 h4.origin {
     opacity: 0.56;
 }
+
 
 .colorful-bg {
     display: block;
@@ -193,6 +209,11 @@ a.auxBtn:hover {
     transition: all .3s ease-in;
     border: 1px solid #ffffff16;
 
+}
+
+a.auxBtn + .active {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 
