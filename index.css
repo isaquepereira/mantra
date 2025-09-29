@@ -201,12 +201,13 @@ a.auxBtn {
     border-radius: 50%;
     border: 1px solid #ffffff08;
     box-sizing: border-box;
+    transition: all .15s ease-in;
+
 }
 
 a.auxBtn:hover {
-    color: #ffffff96;
+    color: #ffffffb0;
     background-color: #ffffff20;
-    transition: all .3s ease-in;
     border: 1px solid #ffffff16;
 
 }
@@ -214,6 +215,12 @@ a.auxBtn:hover {
 a.auxBtn + .active {
     background-color: #ffffff;
     color: #000000;
+}
+
+a#btnRefresh:active {
+    background-color: #ffffffd0;
+    color: #000000;
+    transform: rotateZ(180deg);
 }
 
 
