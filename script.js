@@ -13,10 +13,18 @@ import contentLibrary from "./mantras.js";
 const getRandomMantra = () => contentLibrary[Math.floor(Math.random() * contentLibrary.length)];
 
 const displayMantra = ({piece, author, origin}) => {
-    console.log({piece, author, origin});
+    // console.log({piece, author, origin});
     document.querySelector('.piece').textContent = piece;
     document.querySelector('.author').textContent = author;
     document.querySelector('.origin').textContent = origin;
 };
 
 displayMantra(getRandomMantra())
+
+const btnRefresh = document.getElementById("btnRefresh");
+console.log(btnRefresh);
+
+btnRefresh.addEventListener("click", () => {
+    const newMantra = getRandomMantra();
+    displayMantra(newMantra);
+});
