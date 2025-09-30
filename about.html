@@ -1,41 +1,104 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@400;600&display=swap"
-            rel="stylesheet"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Mantra – Pensamentos, poesia e trechos de músicas</title>
+  </head>
+  <body>
+    <div class="page-content">
+      <header>
+        <div class="logo">
+          <svg
+            width="133"
+            height="32"
+            viewBox="0 0 133 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M131.743 25.5308C131.743 26.7983 131.743 27.5588 132.106 28.9711H128.846C128.303 28.2469 128.122 26.9794 128.122 26.3275C127.253 28.3555 125.804 29.3333 123.632 29.3333C120.916 29.3333 118.851 27.414 118.851 23.3942C118.851 15.2099 128.122 15.8618 128.122 11.2988C128.122 9.23465 127.289 8.3293 125.696 8.3293C123.957 8.3293 123.052 9.41572 123.052 12.0593V12.9647H119.431V12.4215C119.431 8.0396 120.915 5.07007 125.696 5.07007C130.367 5.07007 131.743 8.0396 131.743 12.0593V25.5308ZM128.122 23.4304V15.9342C127.18 17.9622 122.473 18.9399 122.473 22.8872C122.473 24.7341 123.233 26.074 125.08 26.074C126.999 26.074 127.941 24.1185 128.122 23.4304Z"
+              fill="white"
             />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="stylesheet" href="reset.css" />
-        <link rel="stylesheet" href="index.css" />
-        <title>Mantra – Pensamentos, poesia e trechos de músicas</title>
-    </head>
-    <body>
-        
-        <div class="page-content">
-
-            <section class="mantraBox">
-                <article class="content">
-                    <h1 class="piece">Mantra</h1>                    
-                    <p>Na cultura indiana, sílaba, palavra ou verso pronunciados segundo prescrições ritualísticas e musicais, tendo em vista uma finalidade mágica ou o estabelecimento de um estado contemplativo. Um mantra pode simbolizar ou evocar uma filosofia mística (dársana), um livro sagrado ou um deus; é amplamente utilizado no ritualismo hinduísta e no budista, nas práticas psicofísicas da ioga e no tantrismo.</p>
-                    <p>Trata-se de um pequeno projeto de Design e Front-end idealizado por <a href="#">Isaque Pereira</a> com o objetivo de compartilhar pequenos textos – de diversas origens –  que por definição podem ser um mantra.</p>
-                </article>
-                <!-- <div class="colorful-bg">
+            <path
+              d="M114.235 5.07007C117.494 5.07007 118.146 7.49639 118.146 12.2404V13.3268H114.525V11.6972C114.525 9.633 114.235 8.32931 112.569 8.32931C110.759 8.32931 109.6 10.6108 109.6 12.675V28.9711H105.978V5.43221H109.6V8.32931C110.252 6.88076 111.592 5.07007 114.235 5.07007Z"
+              fill="white"
+            />
+            <path
+              d="M104.342 8.6913H100.358V21.0764C100.358 24.2632 100.576 25.7118 102.748 25.7118H104.342V28.971H102.097C97.2439 28.971 96.7369 26.3636 96.7369 21.0764V8.6913H94.2019V5.43206C96.3385 4.81643 97.3163 2.42632 97.2801 0H100.901C100.901 2.6436 99.7426 4.96128 98.1854 5.43206H104.342V8.6913Z"
+              fill="white"
+            />
+            <path
+              d="M88.8026 5.07007C92.1343 5.07007 93.2931 7.31532 93.2931 12.4215V28.9711H89.6718V11.8783C89.6718 9.59679 89.0199 8.32931 87.2092 8.32931C85.2175 8.32931 84.3846 9.95892 84.3846 12.0593V28.9711H80.7632V5.43221H84.3846V8.07581C84.964 6.77211 86.2315 5.07007 88.8026 5.07007Z"
+              fill="white"
+            />
+            <path
+              d="M78.5898 25.5308C78.5898 26.7983 78.5898 27.5588 78.952 28.9711H75.6927C75.1495 28.2469 74.9685 26.9794 74.9685 26.3275C74.0993 28.3555 72.6508 29.3333 70.478 29.3333C67.7619 29.3333 65.6978 27.414 65.6978 23.3942C65.6978 15.2099 74.9685 15.8618 74.9685 11.2988C74.9685 9.23465 74.1356 8.3293 72.5422 8.3293C70.8039 8.3293 69.8986 9.41572 69.8986 12.0593V12.9647H66.2772V12.4215C66.2772 8.0396 67.7619 5.07007 72.5422 5.07007C77.2137 5.07007 78.5898 8.0396 78.5898 12.0593V25.5308ZM74.9685 23.4304V15.9342C74.0269 17.9622 69.3191 18.9399 69.3191 22.8872C69.3191 24.7341 70.0796 26.074 71.9265 26.074C73.8458 26.074 74.7874 24.1185 74.9685 23.4304Z"
+              fill="white"
+            />
+            <path
+              d="M60.06 5.07007C63.283 5.07007 64.0797 7.31532 64.0797 12.4215V28.9711H60.4583V11.8783C60.4583 9.59679 59.9876 8.32931 58.4666 8.32931C56.7283 8.32931 55.8954 9.95892 55.8954 12.0593V12.4215V28.9711H52.274V11.8783C52.274 9.59679 51.8033 8.32931 50.2823 8.32931C48.544 8.32931 47.7111 9.95892 47.7111 12.0593V28.9711H44.0897V5.43221H47.7111V8.07581C48.2905 6.59105 49.558 5.07007 51.8757 5.07007C54.0485 5.07007 55.1349 6.08405 55.5695 8.32931C56.3662 6.51862 57.7785 5.07007 60.06 5.07007Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M29.4991 16C31.1876 16 32.5564 17.3688 32.5564 19.0573V19.6237C30.9666 18.2277 28.5451 18.2873 27.0278 19.8047C25.4471 21.3853 25.4471 23.948 27.0278 25.5286L32.5564 31.0573V32H31.6137L26.085 26.4714C24.5044 24.8907 21.9417 24.8907 20.3611 26.4714C18.8437 27.9887 18.7841 30.4102 20.1801 32H19.6137C17.9252 32 16.5564 30.6312 16.5564 28.9427C16.5564 30.6312 15.1876 32 13.4991 32H12.9327C14.3287 30.4102 14.2691 27.9887 12.7517 26.4714C11.1711 24.8907 8.60838 24.8907 7.02775 26.4714L1.4991 32H0.556396V31.0573L6.08504 25.5286C7.66567 23.948 7.66567 21.3853 6.08504 19.8047C4.56766 18.2873 2.14621 18.2277 0.556396 19.6237V19.0573C0.556396 17.3688 1.92519 16 3.61369 16C1.92519 16 0.556396 14.6312 0.556396 12.9427V12.3763C2.14621 13.7723 4.56766 13.7127 6.08504 12.1953C7.66567 10.6147 7.66567 8.05198 6.08504 6.47135L0.556396 0.942708V0H1.4991L7.02775 5.52865C8.60838 7.10927 11.1711 7.10927 12.7517 5.52865C14.2691 4.01126 14.3287 1.58981 12.9327 0H13.4991C15.1876 0 16.5564 1.3688 16.5564 3.05729C16.5564 1.3688 17.9252 0 19.6137 0H20.1801C18.7841 1.58981 18.8437 4.01126 20.3611 5.52865C21.9417 7.10927 24.5044 7.10927 26.085 5.52865L31.6137 0H32.5564V0.942708L27.0278 6.47135C25.4471 8.05198 25.4471 10.6147 27.0278 12.1953C28.5451 13.7127 30.9666 13.7723 32.5564 12.3763V12.9427C32.5564 14.6312 31.1876 16 29.4991 16ZM6.1189 17.9531C8.20159 20.0354 11.5779 20.0354 13.6606 17.9531L15.6137 16L13.6606 14.0469C11.5779 11.9646 8.20159 11.9646 6.1189 14.0469L4.16577 16L6.1189 17.9531ZM14.6033 18.8958C12.521 20.9785 12.521 24.3548 14.6033 26.4375L16.5564 28.3906L18.5095 26.4375C20.5918 24.3548 20.5918 20.9785 18.5095 18.8958L16.5564 16.9427L14.6033 18.8958ZM14.6033 5.5625C12.521 7.64519 12.521 11.0215 14.6033 13.1042L16.5564 15.0573L18.5095 13.1042C20.5918 11.0215 20.5918 7.64519 18.5095 5.5625L16.5564 3.60938L14.6033 5.5625ZM19.4522 17.9531C21.5349 20.0354 24.9112 20.0354 26.9939 17.9531L28.947 16L26.9939 14.0469C24.9112 11.9646 21.5349 11.9646 19.4522 14.0469L17.4991 16L19.4522 17.9531Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <nav>
+          <a href="index.html" id="btnAbout" class="active">Sobre</a>
+        </nav>
+      </header>
+      <section class="mantraBox">
+        <article class="content">
+          <h1 class="piece">Mantra</h1>
+          <p>
+            Na cultura indiana, sílaba, palavra ou verso pronunciados segundo
+            prescrições ritualísticas e musicais, tendo em vista uma finalidade
+            mágica ou o estabelecimento de um estado contemplativo. Um mantra
+            pode simbolizar ou evocar uma filosofia mística (dársana), um livro
+            sagrado ou um deus; é amplamente utilizado no ritualismo hinduísta e
+            no budista, nas práticas psicofísicas da ioga e no tantrismo.
+          </p>
+          <p>
+            Trata-se de um pequeno projeto de Design e Front-end idealizado por
+            <a href="#">Isaque Pereira</a> com o objetivo de compartilhar
+            pequenos textos – de diversas origens – que por definição podem ser
+            um mantra.
+          </p>
+        </article>
+        <!-- <div class="colorful-bg">
                     <div class="color-1"></div>
                     <div class="color-2"></div>
                     <div class="color-3"></div>
                 </div> -->
-            </section>
-            <footer class="footer">
-                <a href="#" class="auxBtn"><span class="material-symbols-outlined">refresh</span></a>
-                <a href="#" class="auxBtn"><span class="material-symbols-outlined">add</span></a>
-                <a href="#" class="auxBtn"><span class="material-symbols-outlined">download</span></a>
-                <a href="index.html" class="auxBtn active"><span class="material-symbols-outlined">info</span></a>
-            </footer>
-        </div>
-    </body>
+      </section>
+      <footer class="footer">
+        <a href="#" class="auxBtn"
+          ><span class="material-symbols-outlined">refresh</span></a
+        >
+        <a href="#" class="auxBtn"
+          ><span class="material-symbols-outlined">add</span></a
+        >
+        <a href="#" class="auxBtn"
+          ><span class="material-symbols-outlined">download</span></a
+        >
+      </footer>
+    </div>
+  </body>
 </html>
