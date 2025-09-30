@@ -1,27 +1,29 @@
 import contentLibrary from "./mantras.js";
 
+let lastMantraIndex = -1;
+
 function getRandomMantra() {
-    const mantra = contentLibrary[Math.floor(Math.random() * contentLibrary.length)];
-    console.log('Selected mantra:', mantra);
-    let indexM = contentLibrary.indexOf(mantra)
-    console.log(indexM);
-    return mantra;
+    let index;
+    do {
+        index = Math.floor(Math.random() * contentLibrary.length);
+    } while (index === lastMantraIndex);
+    lastMantraIndex = index;
+    console.log("Selected mantra index:", index);
+    return contentLibrary[index];
 }
 
-function displayMantra({piece, author, origin}) {
+function renderMantra({piece, author, origin}) {
     // console.log({piece, author, origin});
     document.querySelector('.piece').textContent = piece;
     document.querySelector('.author').textContent = author;
     document.querySelector('.origin').textContent = origin;
 };
 
-displayMantra(getRandomMantra())
+renderMantra(getRandomMantra());
+
 
 // Refresh Button
 const btnRefresh = document.getElementById("btnRefresh");
-console.log(btnRefresh);
-
 btnRefresh.addEventListener("click", () => {
-    const newMantra = getRandomMantra();
-    displayMantra(newMantra);
+    renderMantra(getRandomMantra());
 });
