@@ -14,9 +14,9 @@ function getRandomMantra() {
 
 function renderMantra({piece, author, origin}) {
     // console.log({piece, author, origin});
-    document.querySelector('.piece').textContent = piece;
-    document.querySelector('.author').textContent = author;
-    document.querySelector('.origin').textContent = origin;
+    document.getElementById('piece').textContent = piece;
+    document.getElementById('author').textContent = author;
+    document.getElementById('origin').textContent = origin;
 };
 
 renderMantra(getRandomMantra());

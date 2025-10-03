@@ -18,7 +18,7 @@
     <title>Mantra – Pensamentos, poesia e trechos de músicas</title>
   </head>
   <body>
-    <div class="page-content">
+    <main class="main">
       <header>
         <div class="logo">
           <svg
@@ -60,36 +60,61 @@
             />
           </svg>
         </div>
-        <nav>
+        <!-- <nav>
           <a href="about.html" id="btnAbout">Sobre</a>
-        </nav>
+        </nav> -->
       </header>
-      <section class="mantraBox">
-        <article class="content">
-          <h1 class="piece"></h1>
-          <footer class="details">
-            <h3 class="author"></h3>
-            <h4 class="origin"></h4>
-          </footer>
+      <section class="intro">
+        <article class="cardMantra">
+          <section class="innerContent">
+            <div>
+              <h1 id="piece"></h1>
+            </div>
+            <footer class="details">
+              <h3 id="author"></h3>
+              <h4 id="origin"></h4>
+            </footer>
+
+            <div class="cardMantraBG">
+              <div class="c1"></div>
+              <div class="c2"></div>
+              <div class="c3"></div>
+            </div>
+          </section>
         </article>
-        <div class="colorful-bg">
-          <div class="color-1"></div>
-          <div class="color-2"></div>
-          <div class="color-3"></div>
-        </div>
+        <footer class="actions">
+          <a href="#" id="btnRefresh" class="iconBtn"
+            ><span class="material-symbols-outlined">refresh</span></a
+          >
+          <a href="#" class="iconBtn"
+            ><span class="material-symbols-outlined">add</span></a
+          >
+          <a href="#" class="iconBtn"
+            ><span class="material-symbols-outlined">download</span></a
+          >
+        </footer>
       </section>
-      <footer class="footer">
-        <a href="#" id="btnRefresh" class="auxBtn"
-          ><span class="material-symbols-outlined">refresh</span></a
-        >
-        <a href="#" class="auxBtn"
-          ><span class="material-symbols-outlined">add</span></a
-        >
-        <a href="#" class="auxBtn"
-          ><span class="material-symbols-outlined">download</span></a
-        >
-      </footer>
-    </div>
+      <article class="about">
+        <!-- <h3>Sobre</h3> -->
+        <p>
+          Na cultura indiana, sílaba, palavra ou verso pronunciados segundo
+          prescrições ritualísticas e musicais, tendo em vista uma finalidade
+          mágica ou o estabelecimento de um estado contemplativo. Um mantra pode
+          simbolizar ou evocar uma filosofia mística (dársana), um livro sagrado
+          ou um deus; é amplamente utilizado no ritualismo hinduísta e no
+          budista, nas práticas psicofísicas da ioga e no tantrismo.
+        </p>
+        <p>
+          Trata-se de um pequeno projeto de Design e Front-end idealizado por
+          <a href="https://bento.me/isaquepereira" target="_blank"
+            >Isaque Pereira</a
+          >
+          com o objetivo de compartilhar pequenos textos – de diversas origens –
+          que por definição podem ser um mantra.
+        </p>
+      </article>
+    </main>
+
     <script src="script.js" type="module"></script>
     <script src="mantras.js" type="module"></script>
   </body>
